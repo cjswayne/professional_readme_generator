@@ -7,15 +7,16 @@ const genMarkdown = require('./utils/generateMarkdown');
 const licenses = [
     { name: 'MIT License', value: 'MIT' },
     { name: 'GNU General Public License (GPL)', value: 'GPL' },
-    { name: 'Apache License 2.0', value: 'Apache-2.0' },
-    { name: 'BSD License 2-clause', value: 'BSD-2-Clause' },
-    { name: 'BSD License 3-clause', value: 'BSD-3-Clause' },
+    { name: 'Apache License 2.0', value: 'Apache_2_0' },
+    { name: 'BSD License 2-clause', value: 'BSD_2_Clause' },
+    { name: 'BSD License 3-clause', value: 'BSD_3_Clause' },
     { name: 'GNU Lesser General Public License (LGPL)', value: 'LGPL' },
-    { name: 'Mozilla Public License 2.0', value: 'MPL-2.0' },
-    { name: 'Creative Commons Zero v1.0 Universal', value: 'CC0-1.0' },
-    { name: 'Eclipse Public License 1.0', value: 'EPL-1.0' },
-    { name: 'Microsoft Public License', value: 'MS-PL' },
-    { name: 'Boost Software License 1.0', value: 'BSL-1.0' }
+    { name: 'Mozilla Public License 2.0', value: 'MPL_2_0' },
+    { name: 'Creative Commons Zero v1.0 Universal', value: 'CC0_1_0' },
+    { name: 'Eclipse Public License 1.0', value: 'EPL_1_0' },
+    { name: 'Microsoft Public License', value: 'MS_PL' },
+    { name: 'Boost Software License 1.0', value: 'BSL_1_0' },
+    { name: 'NONE', value: 'none' }
   ];
 
 const questions = [
@@ -50,6 +51,16 @@ const questions = [
         message:'Test Instructions'
     },
     {
+        type:'input',
+        name:'credits',
+        message:'Credits'
+    },
+    {
+        type:'input',
+        name:'features',
+        message:'Features'
+    },
+    {
         type:'list',
         name:'license',
         message:'Select License',
@@ -66,10 +77,11 @@ const questions = [
         message:'Email Address'
     }
 ];
+// To add a screenshot, create an assets/images folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    console.log(data)
+    console.log(data);
     fs.writeFile(fileName, data, (err) => {
         if(err){
             return console.log(err);
@@ -82,6 +94,7 @@ function init() {
     // writeToFile(fileName, data)
     inquirer.prompt(questions)
     .then((answers) => {
+        console.log(answers);
         writeToFile('./README.md', genMarkdown(answers));
     });
 }
