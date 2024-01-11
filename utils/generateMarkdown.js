@@ -1,21 +1,17 @@
+// getting required packages
 const licenses = require('../lib/licenseData');
 
-// TODO: Create a function that returns a license badge based on which license is passed in
-// TODO: Create a function that returns the license link
-// TODO: Create a function that returns the license section of README
-// These fxns are found within LicenseData.js
-
-
-// TODO: Create a function to generate markdown for README
+// function to generate markdown for README
 function generateMarkdown({projTitle, description, instalInstruct, usageInfo, contGuidelines, testInstruct, credits, features,  license, github, email}) {
-  // return data
-  return `# ${projTitle}
+  
+  return `
+  # ${projTitle}
 
   ${licenses.getLicenseBadge(license)}
 
   ## Description
   
-  ${description}
+  ${description} restart your recording?
   
   ## Table of Contents 
     
@@ -23,7 +19,12 @@ function generateMarkdown({projTitle, description, instalInstruct, usageInfo, co
   - [Usage](#usage)
   - [Credits](#credits)
   - [License](#license)
-  
+  - [Badges](#badges)
+  - [Features](#features)
+  - [How To Contribute](#how-to-contribute)
+  - [Tests](#tests)
+  - [Questions](#questions)
+
   ## Installation
   
   ${instalInstruct}
@@ -56,6 +57,10 @@ function generateMarkdown({projTitle, description, instalInstruct, usageInfo, co
   
   ${testInstruct}
 
+  ## Questions
+  If you have questions reach me here at: [${email}](${email})
+
+  Github: [${github}](https://github.com/${github})
   `;
 }
 

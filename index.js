@@ -1,12 +1,13 @@
-// TODO: Include packages needed for this application
+// packages needed
 const fs = require('fs');
 const inquirer = require('inquirer');
 const genMarkdown = require('./utils/generateMarkdown');
-// TODO: Create an array of questions for user input
 const questions = require('./lib/questions');
-// To add a screenshot, create an assets/images folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
 
-// TODO: Create a function to write README file
+const readmePath = './readme-example/README.md'
+
+
+// fxn that writes readme file
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, data, (err) => {
         if(err){
@@ -14,13 +15,23 @@ function writeToFile(fileName, data) {
         }
     });
 }
+//fxn to open the readme file
+function openFile(readmePath){
+    import('open').then(open => {
+        open.default(readmePath).catch(err => {
+            console.error('Failed to open README:', err);
+        });
+    }).catch(err => {
+        console.error('Failed to load module:', err);
+    });
+}
 
-// TODO: Create a function to initialize app
+// fxn to initialize app
 function init() {
     inquirer.prompt(questions)
     .then((answers) => {
-        console.log(answers);
-        writeToFile('./README.md', genMarkdown(answers));
+        writeToFile(readmePath, genMarkdown(answers));
+        openFile(readmePath);
     });
 }
 
