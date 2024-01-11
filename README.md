@@ -1,10 +1,14 @@
-# Professional Readme Generator
+# <Your-Project-Title>
 
-  ![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)
+  ![[object Object]](https://img.shields.io/badge/License-MIT-yellow.svg)
 
   ## Description
   
-  An app that will create a professional readme based off of user input.
+  Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide: 
+ - What was your motivation? 
+ - Why did you build this project? (Note: the answer is not 'Because it was a homework assignment.') 
+ - What problem does it solve? 
+ - What did you learn?
   
   ## Table of Contents 
     
@@ -15,15 +19,15 @@
   
   ## Installation
   
-  TBD
+  
 
   ## Usage
   
-  TBD  
+    
   
   ## Credits
   
-  TBD
+  
   
   ## License
   
@@ -31,20 +35,18 @@
   
   ## Badges
   
-  ![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)
-  
-  Badges arent necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what youre doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
-  
+  ![[object Object]](https://img.shields.io/badge/License-MIT-yellow.svg)
+    
   ## Features
   
-  TBD
+  
   
   ## How to Contribute
   
-  TBD
+  
   
   ## Tests
   
-  TBD
+  
 
   
