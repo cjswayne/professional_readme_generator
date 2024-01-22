@@ -1,11 +1,10 @@
-
-  # work_day_scheduler
+  # Note-Taker
 
   ![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)
 
   ## Description
   
-  In this project I refactored code to make a functional work day scheduler. The application shows which hours have past, which hour it is, and future hours by color, it also has the ability to save data to the browser's local storage, allowing the browser to be reloaded or closed without the loss of your schedule. restart your recording?
+  In this project I created the backend for an unfinished frontend note taker app. The goal of the app is to take notes, and the problem it solves is allowing a user to open the app, write down and save notes, then later the user can look at past notes or delete past notes if they wanted to. Things I learned were how to set up a backend server for a frontend app. restart your recording?
   
   ## Table of Contents 
     
@@ -15,17 +14,14 @@
   - [License](#license)
   - [Badges](#badges)
   - [Features](#features)
-  - [How To Contribute](#how-to-contribute)
-  - [Tests](#tests)
-  - [Questions](#questions)
 
   ## Installation
   
-  Clone the repository to your local computer, open the index.html file on your browser.
+  VIEW HERE: [https://note-taker-c453.onrender.com/notes/](https://note-taker-c453.onrender.com/notes/)
 
   ## Usage
   
-  Use to schedule out your 8 hour work day from 9 to 5.  
+  !![]('../')
   
   ## Credits
   
@@ -41,18 +37,6 @@
     
   ## Features
   
-  The color of each time block for each hour changes color based off if it is past, present or future of what time it is when the application runs.
+  - When deleting a note you dont have to refresh the page for the deletion to take effect
   
-  ## How to Contribute
-  
-  Refer to the questions section and contact me to learn more about contributions.
-  
-  ## Tests
-  
-  None.
-
-  ## Questions
-  If you have questions reach me here at: [cjswayne42@gmail.com](cjswayne42@gmail.com)
-
-  Github: [cjswayne42](https://github.com/cjswayne42)
   

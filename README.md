@@ -5,7 +5,7 @@
 
   ## Description
   
-  This project was about refactoring code that generates a readme file. It solves the time consuming hassle of setting up a readme file. restart your recording?
+  This project was about refactoring code that generates a readme file. It solves the time consuming hassle of setting up a readme file. 
   
   ## Table of Contents 
     
